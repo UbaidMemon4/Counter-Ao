@@ -48,7 +48,7 @@ function App() {
         <h1 className='heading'>Todo-App</h1> 
         <form onSubmit={onSubmit}>
           <label>
-          '2'  Topic Name
+          Topic Name
           </label>
           <input value={name} name='name' placeholder='Topic Name' required onChange={(e) => {
             setName(e.target.value)
