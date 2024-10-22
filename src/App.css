@@ -1,20 +1,35 @@
-.heading {
+.App {
   text-align: center;
-  font-family: cursive;
-  font-size: 57px;
 }
-.app-wrapper form {
-  margin-left: 33%;
+.heading {
+  margin: 5px 0;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 70px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+  justify-content: center;
+}
+.form-inputs-control {
+  margin-bottom: 20px;
+}
+.label-topic {
+  margin-right: 76px;
+}
+.label-description {
+  margin-right: 8px;
 }
 label {
   font-size: 27px;
+  font-weight: bold;
 }
 input {
-  width: 360px;
+  width: 300px;
   height: 35px;
-  margin-bottom: 15px;
 }
 textarea {
+  height: 35px;
   width: 300px;
 }
 .input_button {
@@ -23,8 +38,8 @@ textarea {
   border: 1px solid white;
   width: 100px;
   height: 40px;
-  margin-top: 22px;
-  margin-left: 410px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 button:hover {
   background-color: white;
@@ -32,36 +47,56 @@ button:hover {
   border: 1px solid black;
   cursor: pointer;
 }
+.heading1 {
+  font-family: cursive;
+  font-size: 37px;
+}
+.todo-container {
+  display: flex;
+  align-items: center;
+  row-gap: 5px;
+  flex-direction: column;
+  width: 100%;
+}
 .todo-card {
-  background: linear-gradient(269deg, aqua, purple);
+  background: linear-gradient(355deg, #00d0ff, #ffef00);
   border: 1px solid wheat;
-  margin: 5px 225px 5px 225px;
+  margin: 5px 0;
   height: 150px;
   border-radius: 20px;
-  text-align: center;
+  width: 70%;
 }
 .todo-card:hover {
-  background: linear-gradient(269deg, purple, aqua);
+  background: linear-gradient(355deg, #ffef00, #00d0ff);
 }
-.todo-card h3{
+.todo-card h3 {
+  font-size: 35px;
+  font-weight: bold;
+}
+.todo-card p {
+  color: white;
   font-size: 25px;
 }
-.todo-card button{
-  background-color: black;
-  color: white;
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.todo-card button {
+  width: 100px;
+  background-color: white;
+  color: black;
   border: 1px solid white;
+  height: 35px;
 }
 .todo-card button:hover {
   background-color: white;
-  color: black;
+  color: grey;
   border: 1px solid black;
   cursor: pointer;
 }
-.todo-card p{
-  color: white;
-}
-.heading1 {
-  text-align: center;
-  font-family: cursive;
-  font-size: 37px;
+@media only screen and (max-width: 425px) {
+  .heading {
+    font-size: 40px;
+  }
 }
